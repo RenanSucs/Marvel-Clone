@@ -3,8 +3,10 @@
     font-size: 10px;
 }
 
-body {
-    color: #202020;
+p{
+    font: 500 0.8rem/1 "DINNextW01-Regular",Trebuchet MS,Helvetica,Arial,sans-serif;
+    color: #f2f2f2;
+    line-height: 1.5rem;
 }
 
 .background-nav{
@@ -102,8 +104,8 @@ body {
     text-align: center;
 }
 
-.active {
-    background-color: #db3e3e;
+.active-slice {
+    background-color: #e02a2a;
 }
   
 .fade {
@@ -122,5 +124,59 @@ body {
     from {opacity: .4} 
     to {opacity: 1}
 }
-  
+
+.container{
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.background-slide{
+    background-color: #22262a;
+    height: 36rem;
+    position: relative;
+    bottom: 1.3rem;
+    z-index: -999;
+}
+
+.logo-avengers{
+    padding-top: 3rem;
+}
+
+.subtitle{
+    font: 500 1.5rem/1 DINNextW01-CondensedMed,Trebuchet MS,Helvetica,Arial,sans-serif;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding-bottom: .7rem;
+}
+
+.btn {
+    text-transform: uppercase;
+    color: #fff;
+    background: #e02a2a;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    font-size: 1.1rem;
+    padding: 12px 35px;
+    display: inline-block;
+    transform: skew(-21deg);
+    &:visited { color: #fff; }
+    &:hover { background: #0069a8; cursor: pointer; }
+    & > span { display: inline-block; transform: skew(21deg); 
+  }
+
+  .background-ticket{
+    background-image: url("../img/hero_captain_marvel.jpg");
+    width: 100%;
+    height: 300px;
+    transform: scaleX(1);
+    background-position: center;
+    background-size: cover;
+    transition: all .2s linear;
+  }
   
