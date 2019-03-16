@@ -98,6 +98,7 @@ p{
     transition: background-color 0.6s ease;
     position: relative;
     bottom: 0.7em;
+    z-index: 999;
   }
 
 .slice-align{
@@ -106,6 +107,7 @@ p{
 
 .active-slice {
     background-color: #e02a2a;
+    z-index: 999;
 }
   
 .fade {
@@ -131,12 +133,36 @@ p{
 }
 
 .background-slide{
-    background-color: #22262a;
-    height: 36rem;
+    background-color: #151515;
+    height: 28rem;
     position: relative;
     bottom: 1.3rem;
-    z-index: -999;
 }
+
+.background-slide button{
+    margin-top: 12px;
+}
+
+.background-ticket{
+    background-color: #151515;
+    height: 35rem;
+    transform: skew(0deg, -10deg);
+}
+
+.content-ticket{
+    transform: skew(0deg, 10deg);
+    padding-top: 80px;
+}
+
+.background-ticket img{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
 
 .logo-avengers{
     padding-top: 3rem;
@@ -161,22 +187,311 @@ p{
     text-decoration: none;
     border: 0;
     outline: 0;
-    font-size: 1.1rem;
-    padding: 12px 35px;
-    display: inline-block;
+    font-size: 0.7rem;
+    padding: 12px 25px;
     transform: skew(-21deg);
-    &:visited { color: #fff; }
-    &:hover { background: #0069a8; cursor: pointer; }
-    & > span { display: inline-block; transform: skew(21deg); 
   }
 
-  .background-ticket{
-    background-image: url("../img/hero_captain_marvel.jpg");
-    width: 100%;
-    height: 300px;
-    transform: scaleX(1);
-    background-position: center;
-    background-size: cover;
-    transition: all .2s linear;
+  .btn-ticket{
+        background-color: #151515;
+        border: 1px solid #f2f2f2 ;
+        display: block;
   }
+
+  .background-ticket button{
+      margin: 6px 0;
+  }
+
+  .background-ticket p{
+      margin-bottom: 30px;
+  }
+
+.img-ticket{
+    background-image:url("../img/hero_captain_marvel.jpg");
+    width: 100%;
+    height: 280px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    top: 36px;
+    z-index: 99;
+    position: relative;
+}
+
+.horizontal-scroll{
+    max-width: auto;
+    height:300px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.card-body{
+    max-width: 40%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.card-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-item{
+    flex:2 1 300px;
+}
+
+.card-body h5{
+    color: #e02a2a;
+    font-size: 0.8rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: "DINNextW01-CondensedMedium",Trebuchet MS,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.card-body p{
+    color: #151515;
+    font-size: 0.8rem;
+    font-family: "DINNextW01-Regular",Trebuchet MS,Helvetica,Arial,sans-serif;
+    font-weight: bold;
+
+}
   
+.card-01{
+    background-image:url("../img/_cmost_card.jpg");
+    height: 72px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.divider-container{
+    content: "";
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: 19px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 2px;
+    width: 100%;
+    background-color: #e5e5e5;
+    z-index: 1;
+}
+
+.divider{
+    position: relative;
+    background-color: #e62429;
+    z-index: 2;
+    cursor: pointer;
+    height: 24px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    background-clip: padding-box;
+    max-width: 25%;
+    bottom: 10px;
+}
+
+.img-celebrate{
+    position: relative;
+    top: -34px;
+    left: 0;
+    width: 100%;
+    height: 280px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    background-image: url(../img/marvel_80_years.jpg);
+}
+
+.background-celebrate{
+    background-color: #151515;
+    height: 30rem;
+    transform: skew(0deg, -10deg);
+    margin-top: 40px;
+}
+
+.content-celebrate{
+    transform: skew(0deg, 10deg);
+}
+
+.content-celebrate h3{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.subtitle-style{
+    font: 800 1.2rem/1 DINNextW01-CondensedMed,Trebuchet MS,Helvetica,Arial,sans-serif;
+    color: #151515;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding-bottom: 1.7rem;
+    margin: 20px 0;
+    position: relative;
+}
+
+.subtitle-style::before{
+    background-color:#c6a972;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    -webkit-transform: rotate(-45deg) skewX(45deg);
+    transform: rotate(-45deg) skewX(45deg);
+    width: 20px;
+    top: -13px;
+    left: 42px;
+}
+
+.subtitle-style::after{
+    background-color:#c6a972;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    -webkit-transform: rotate(-45deg) skewX(45deg);
+    transform: rotate(-45deg) skewX(45deg);
+    width: 20px;
+    top: 29px;
+    left: 1px;
+}
+
+.card-body-characters{
+    max-width: 40%;
+}
+
+.card-thumb-caracters{
+    background: #e62429;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.card-thumb-caracters figure img{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    overflow: hidden;
+    -o-object-position: top center;
+    object-position: top center;
+
+    display: block;
+    margin: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center center;
+    object-position: center center;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.img-wrapper{
+    position: relative;
+    overflow: hidden;
+    height: 170px;
+}
+
+.img-wrapper::after{
+    height: 4px;
+    content: "";
+    background-color: #e62429;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.is-sliding-caracters{
+    background: #151515;
+    color: #37474f;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+    height: 145px;
+    padding: 16px 24px 17px 16px;
+    position: relative;
+    vertical-align: middle;
+    z-index: 30;
+}
+
+.is-sliding-caracters::after{
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: #fff;
+    border-style: solid;
+    border-top-color: transparent;
+    border-width: 12px 12px 0 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: auto;
+    z-index: 40;
+}
+
+/*.is-sliding-caracters::before{
+    background: #e62429;
+    bottom: 100%;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    -webkit-transition-timing-function: cubic-bezier(.75,0,.125,1);
+    transition-timing-function: cubic-bezier(.75,0,.125,1);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s,-webkit-transform .3s;
+    width: 100%;
+    z-index: -1;
+}*/
+
+.card-headline{
+    color: #fff;
+    font-family: DINNextW01-CondensedMed,Trebuchet MS,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.card-body-characters a{
+    text-decoration: none;
+}
+.divider-characters .divider-container{
+    bottom: -17px;
+}
+
+.the-hyper-box{
+    position: relative;
+    padding-top: 60px;
+}
+
+.the-hyper-box h3{
+    font: 800 1.2rem/1 DINNextW01-CondensedMed,Trebuchet MS,Helvetica,Arial,sans-serif;
+    color: #151515;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding-bottom: 1.7rem;
+    margin: 20px 0;
+    position: absolute;
+    top: 82px;
+    left: 84px;
+}
+
+.the-hyper-box p{
+    margin-top: 5px;
+    color: #151515;
+    text-align: center;
+}

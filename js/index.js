@@ -10,9 +10,7 @@
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
       }
-      for (i = 0; i < sectionSlide.length; i++) {
-        sectionSlide[i].style.display = "none";  
-      }
+    
       slideIndex++;
       if (slideIndex > slides.length) {slideIndex = 1}    
       for (i = 0; i < slice.length; i++) {
