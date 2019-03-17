@@ -1,3 +1,27 @@
+//Menu Toggle
+function slidetoggle(){
+  var slider = document.getElementById('nav-slide');
+  var close = document.getElementById('nav-close');
+  slider.style.height = window.innerHeight - 60 + "px";
+  close.style.height = window.innerHeight - 60 + "px";
+
+  if(slider.style.left == "0px"){
+    slider.style.left = "-2000px";
+  }
+  else{
+    slider.style.left = "0px";
+  }
+
+  if(close.style.left == "0px"){
+    close.style.left = "-400px";
+  }
+  else{
+    close.style.left = "0px";
+  }
+  
+}
+
+
 //Carrossel
 (function(){
     var slideIndex = 0;
