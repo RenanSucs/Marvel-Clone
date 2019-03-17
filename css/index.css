@@ -147,6 +147,7 @@ p{
     background-color: #151515;
     height: 35rem;
     transform: skew(0deg, -10deg);
+    margin-bottom: 47px;
 }
 
 .content-ticket{
@@ -234,10 +235,10 @@ p{
 }
 
 .card-body{
-    margin-top: 60px;
-    width: 85%;
+    margin: 30px auto;
+    width: 70%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-gap: 20px;
 }
@@ -247,9 +248,9 @@ p{
 }
 
 .scroll { 
-    overflow-x: auto;
+    overflow-x: scroll;
     overflow-y: hidden;
-    white-space:nowrap;
+    white-space:normal;
 } 
 
 .img-fluid {
@@ -275,7 +276,7 @@ p{
     margin-bottom: 8px;
 }
 
-.card-01{
+.card-movies-01{
     background-image:url("../img/_cmost_card.jpg");
     height: 72px;
     background-position: top;
@@ -284,6 +285,76 @@ p{
     -webkit-transition: .5s ease;
     transition: .5s ease;
     }
+
+.card-movies-02{
+    background-image:url("../img/_iwd_card.jpg");
+    height: 72px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    }
+
+.card-movies-03{
+    background-image:url("../img/_brie_card_0.jpg");
+    height: 72px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    }
+
+.card-movies-04{
+    background-image:url("../img/_goose_card_4.jpg");
+    height: 72px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    }
+
+.card-comics-01{
+    background-image:url("../img/porkSpider-card.jpg");
+    height: 72px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.card-comics-02{
+    background-image:url("../img/1_18.png");
+    height: 72px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.card-comics-03{
+    background-image:url("../img/poster-top10-01.jpg");
+    height: 72px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.card-comics-04{
+    background-image:url("../img/poster-top10-02.jpg");
+    height: 72px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
 
 .divider-container{
     content: "";
@@ -314,9 +385,6 @@ p{
 }
 
 .img-celebrate{
-    position: relative;
-    top: -38px;
-    left: 0;
     width: 100%;
     height: 280px;
     background-position: top;
@@ -324,18 +392,23 @@ p{
     background-size: cover;
     -webkit-transition: .5s ease;
     transition: .5s ease;
+    top: 13px;
+    z-index: 99;
+    position: relative;
     background-image: url(../img/marvel_80_years.jpg);
 }
 
 .background-celebrate{
     background-color: #151515;
-    height: 30rem;
+    height: 16rem;
     transform: skew(0deg, -10deg);
-    margin-top: 50px;
+    position: relative;
+    top: -40px;
 }
 
 .content-celebrate{
     transform: skew(0deg, 10deg);
+    padding-top: 80px;
 }
 
 .content-celebrate h3{
@@ -493,21 +566,20 @@ p{
     bottom: -17px;
 }
 
-.the-latest-flex{
-    display: flex;
-    flex-direction: column;
-}
-
-.the-latest-item{
-    flex: 1;
+.the-latest-grid{
     margin: 0 auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
 }
 
-.the-latest-item a{
+.the-latest-grid a{
     text-decoration: none;
 }
 
-.the-latest-item span{
+.the-latest-grid span{
     font-family: DINNextW01-CondensedMed,Trebuchet MS,Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 15px;
@@ -517,7 +589,7 @@ p{
     color: #999;
 }
 
-.the-latest-item p{
+.the-latest-grid p{
     color: #151515;
     font-family: DIN Next W01 Regular,Trebuchet MS,Helvetica,Arial,sans-serif;
     font-size: 18px;
@@ -533,6 +605,17 @@ p{
     background-size:contain;
     background-position:center;
     background-image: url(../img/0315_recap-1560x876.jpg);
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-top: -1px;
+}
+
+.the-latest-img02{
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    background-image: url(../img/twim_224_still.jpg);
     width: 100%;
     height: 200px;
     margin-bottom: 10px;
@@ -613,6 +696,10 @@ footer{
     padding-bottom: 30px;
 }
 
+.terms-flex li{
+    margin: 4px;
+}
+
 .terms-flex a{
     color: #999;
     font-size: 12px;
@@ -621,4 +708,58 @@ footer{
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 10px;
+}
+
+@media (min-width:420px){
+    .background-ticket{
+        position: relative;
+        top: -24px;
+    }
+}
+
+@media (min-width: 600px){
+    .slideshow-container {
+      height: 400px;
+    }
+    .slide-01,
+    .slide-02,
+    .slide-03,
+    .slide-04,
+    .slide-05{
+        height: 400px;
+    }
+    .img-ticket,
+    .img-celebrate{
+        height: 440px;
+    }
+
+    .background-ticket{
+        position: relative;
+        top: -38px;
+    }
+    .img-celebrate h3{
+        margin-top: 30px;
+    }
+    .background-celebrate{
+        top: -60px;
+    }
+    .logo{
+        width: 80px;
+        margin: 0;
+        margin-top: 10px;
+    }
+    .footer-flex{
+        display: flex;
+        justify-content: space-around;
+    }
+    .lista-marvel{
+        margin-top: 20px;
+    }
+    .lista-advertising{
+        margin-top: 20px;
+    }
+
+@media (min-width:838px){
+
+    }
 }

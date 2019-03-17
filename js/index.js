@@ -1,3 +1,4 @@
+//Carrossel
 (function(){
     var slideIndex = 0;
     showSlides();
@@ -24,6 +25,7 @@
     }
 })();
 
+//consome api characters
 var marvel = {
   render:function(){
     var url = "http://gateway.marvel.com/v1/public/characters?ts=1&apikey=06c09e8167a2cb86ee2c7eca9a45ce1f&hash=9da92116e899fdefa953696380d6db51";
@@ -38,10 +40,10 @@ var marvel = {
         for(var i = 0; i<data.data.results.length;i++){
           var element = data.data.results[i];
           console.log(element.name);
-          string += "<a href='#'>";
+          string += "<a href='"+element.urls[0].url+"'target='_blank'>";
           string += "<div class='card-thumb-caracters'>";
           string += "<figure class='img-wrapper'>";
-          string += "<img src='img/character_captain.jpg'>";
+          string += "<img src='"+element.thumbnail.path+"/portrait_uncanny."+element.thumbnail.extension+"'/>";
           string += "</figure>";
           string += "</div>";
           string += "<div class='is-sliding-caracters'>";
