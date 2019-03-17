@@ -247,7 +247,7 @@ p{
 }
 
 .scroll { 
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: hidden;
     white-space:nowrap;
 } 
@@ -272,6 +272,7 @@ p{
     font-size: 0.8rem;
     font-family: "DINNextW01-Regular",Trebuchet MS,Helvetica,Arial,sans-serif;
     font-weight: bold;
+    margin-bottom: 8px;
 }
 
 .card-01{
@@ -330,7 +331,7 @@ p{
     background-color: #151515;
     height: 30rem;
     transform: skew(0deg, -10deg);
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .content-celebrate{
@@ -348,7 +349,7 @@ p{
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     padding-bottom: 1.7rem;
-    margin: 20px 0;
+    margin-top:34px;
     position: relative;
 }
 
@@ -379,13 +380,12 @@ p{
 }
 
 .card-body-characters{
-    width: 150px;
-    margin-right: 10px;
-}
-
-.card-caracters-flex{
-    display: flex !important;
-    justify-content: flex-start;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr) ;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    margin-top: 6px;
 }
 
 .card-thumb-caracters{
@@ -411,7 +411,7 @@ p{
     -o-object-position: center center;
     object-position: center center;
     padding: 0;
-    width: 100%;
+    width: 135px;
     height: 100%;
 }
 
@@ -441,6 +441,7 @@ p{
     position: relative;
     vertical-align: middle;
     z-index: 30;
+    width: 135px;
 }
 
 .is-sliding-caracters::after{
@@ -535,7 +536,7 @@ p{
     width: 100%;
     height: 200px;
     margin-bottom: 10px;
-    margin-top: 20px;
+    margin-top: -1px;
 }
 
 .margin-the-latest{

@@ -6,7 +6,7 @@
       var i;
       var slides = document.getElementsByClassName("slides");
       var slice = document.getElementsByClassName("slice");
-      var sectionSlide = document.getElementById("sectionSlide");
+
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
       }
@@ -24,28 +24,36 @@
     }
 })();
 
-/* <style type="text/css">
-#d {
-    height: 100px;
-    width: 100px;
-    border: 1px solid red;
-    margin-top: -200px;
-    transition: margin-top 2s;
-}
+var marvel = {
+  render:function(){
+    var url = "http://gateway.marvel.com/v1/public/characters?ts=1&apikey=06c09e8167a2cb86ee2c7eca9a45ce1f&hash=9da92116e899fdefa953696380d6db51";
+    var marvelCharacter = document.getElementById('featured-characters');
+    $.ajax({
+      url: url,
+      type: "GET",
+     success: function(data){
+      var string = "";
+      
 
-#d.shown {
-    margin-top: 100px;
-}
-  </style>
-</head>
-<body>
-  <button id="b">Toggle slide</button>
-  <div id="d">Weeeeeeee</div>
-
-  <script type="text/javascript">
-  var b = document.getElementById('b');
-  var d = document.getElementById('d');
-  b.addEventListener('click', function() {
-      d.classList.toggle('shown');
-  });
-  </script>*/
+        for(var i = 0; i<data.data.results.length;i++){
+          var element = data.data.results[i];
+          console.log(element.name);
+          string += "<a href='#'>";
+          string += "<div class='card-thumb-caracters'>";
+          string += "<figure class='img-wrapper'>";
+          string += "<img src='img/character_captain.jpg'>";
+          string += "</figure>";
+          string += "</div>";
+          string += "<div class='is-sliding-caracters'>";
+          string += "<p class='card-headline'>"+element.name+"</p>";
+          string += "</div>";
+        }
+        marvelCharacter.innerHTML = string;
+     },
+     error: function(){
+      console.log("So sorry!");
+     }
+    });
+  }
+};
+marvel.render();
