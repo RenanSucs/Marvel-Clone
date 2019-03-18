@@ -796,9 +796,6 @@ footer{
     .background-nav-desk{
         display: none;
     }
-    .menu-desk-background{
-        display: none;
-    }
 }
 
 @media (min-width:420px){
@@ -875,23 +872,22 @@ footer{
         .background-nav-desk{
             background-color: #22262a;
             height: 3.27rem;
+            max-width: 100%;
             width: 100%;
+            position: relative;
+            color: #fff;
+            font-family: DIN Next W01 Regular,Trebuchet MS,Helvetica,Arial,sans-serif;
+            font-size: 12px;
             -webkit-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
         }
 
-        .menu-desk-background{
-            background-color: #22262a;
-            height: 2.5rem;
-            width: 100%;
-        }
-
         .desktopNav__upper {
             height: 52px;
             border-bottom: 1px solid #393939;
-            padding: 0 80px;
+            padding: 0 20px;
         }
     
         .nav-flex-desk{
@@ -899,85 +895,17 @@ footer{
             justify-content: space-between;
         }
 
-        .logo-In{
-            flex-grow: 0;
-            flex-basis: 200px;
-            align-self: stretch;
-            font-family: DIN Next W01 Regular,Trebuchet MS,Helvetica,Arial,sans-serif;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            line-height: 16px;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: #e5e5e5;
-            text-align: center;
-            position: relative;
-            padding-top: 14px;
+        .item-nav-flex{
+            align-self: center;
         }
 
-        .logo-marvel{
-            flex-grow: 0;
-            flex-basis: 50px;
+        .item-nav-flex a{
+            width: 400px;
+            max-height: 50px;
         }
 
-        .logo-cartao{
-            flex-grow: 0;
-            flex-basis:200px;
-            align-self: stretch;
-            font-family: DIN Next W01 Regular,Trebuchet MS,Helvetica,Arial,sans-serif;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 0px;
-            line-height: 16px;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: #e5e5e5;
-            text-align: center;
-        }
-
-        .logo-cartao svg{
-            position: relative;
-        }
-
-        .logo-search{
-            flex-grow: 0;
-            flex-basis: 50px;
-            align-self: stretch;
-            text-align: center;
-            padding-top: 14px;
-        }
-
-
-        .logo-cartao:hover{
+        .item-nav-flex a:hover{
             background-color: #151515;
-            height: 51px;
-        }
-
-        .logo-search:hover{
-            background-color: #151515;
-            height: 51px;
-        }
-
-        .logo-In:hover{
-            background-color: #151515;
-            height: 51px;
-        }
-
-        .lista-desk ul{
-            display: flex;
-            justify-content: center;
-        }
-
-        .lista-desk a{
-            font-family: DIN Next W01 Regular,Trebuchet MS,Helvetica,Arial,sans-serif;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 0px;
-            line-height: 16px;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: #e5e5e5;
         }
 
     }
