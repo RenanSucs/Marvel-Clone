@@ -63,7 +63,6 @@ var marvel = {
 
         for(var i = 0; i<data.data.results.length;i++){
           var element = data.data.results[i];
-          console.log(element.name);
           string += "<a href='"+element.urls[0].url+"'target='_blank'>";
           string += "<div class='card-thumb-caracters'>";
           string += "<figure class='img-wrapper'>";

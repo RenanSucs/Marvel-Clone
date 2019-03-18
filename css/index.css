@@ -12,7 +12,7 @@ p{
 .background-nav{
     background-color: #22262a;
     height: 3.25rem;
-    max-width: 1500px;
+    max-width: 100%;
 }
 
 .color-svg-arrow{
@@ -55,7 +55,6 @@ p{
     margin-bottom: 15px;
     margin-top: 0;
     text-transform: uppercase;
-    letter-spacing: 1px;
     text-decoration: none;
     font-family: DIN Next W01 Regular,Trebuchet MS,Helvetica,Arial,sans-serif;
     font-size: 13px;
@@ -98,7 +97,7 @@ p{
     transition: left .5s ease,max-height .5s ease .5s;
 }
 
-.nav-flex{
+.nav-flex-mobile{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -793,6 +792,12 @@ footer{
     margin-bottom: 10px;
 }
 
+@media (max-width:838px){
+    .background-nav-desk{
+        display: none;
+    }
+}
+
 @media (min-width:420px){
     .background-ticket{
         position: relative;
@@ -843,12 +848,65 @@ footer{
     }
 
     @media (min-width:838px){
+        .slideshow-container {
+            height: 500px;
+        }
+
         .slide-01,
         .slide-02,
         .slide-03,
         .slide-04,
         .slide-05{
-            height: 400px;
+        height: 500px;
+        transform: none;
+        -webkit-transform: none;
+        transition: all .2s linear;
+        background-position: right;
+        background-size: none;
         }
+
+        .background-nav{
+            display: none;
+        }
+
+        .background-nav-desk{
+            background-color: #22262a;
+            height: 3.27rem;
+            max-width: 100%;
+            width: 100%;
+            position: relative;
+            color: #fff;
+            font-family: DIN Next W01 Regular,Trebuchet MS,Helvetica,Arial,sans-serif;
+            font-size: 12px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .desktopNav__upper {
+            height: 52px;
+            border-bottom: 1px solid #393939;
+            padding: 0 20px;
+        }
+    
+        .nav-flex-desk{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .item-nav-flex{
+            align-self: center;
+        }
+
+        .item-nav-flex a{
+            width: 400px;
+            max-height: 50px;
+        }
+
+        .item-nav-flex a:hover{
+            background-color: #151515;
+        }
+
     }
 }
