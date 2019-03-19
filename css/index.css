@@ -861,6 +861,7 @@ footer{
     .lista-advertising{
         margin-top: 20px;
     }
+}
 
     @media (min-width:838px){
         .slideshow-container {
@@ -1142,11 +1143,18 @@ footer{
             position: relative;
         }
 
+        .content-celebrate h3{
+            margin-top: 130px;
+        }
+
         .subtitle-style::before{
+            top: -7px;
+            left: 33px;
         }
 
         .subtitle-style::after{
-
+            width: 20px;
+            top: 30px;
         }
 
         .card-margin-characters{
@@ -1194,5 +1202,38 @@ footer{
             height: 236px;
         }
 
+        .footer-separator{
+            display: none;
+        }
+
+        .social-media{
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .social-media  a{
+            padding: 0 15px;
+        }
+    
+        .social-media svg{
+            transition: .2s;
+        }
+
+        .social-media svg:hover{
+            fill: #fff;
+        }
+
+        .fallow-marvel{
+            text-align: center;
+        }
+
+        .terms-flex a:hover{
+            color: #fff;
+        }
+
+    }
+    @media (max-width:1000px){
+        .background-ticket img {
+            width: 350px;
     }
 }
