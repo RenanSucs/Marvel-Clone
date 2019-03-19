@@ -114,7 +114,7 @@ p{
 }
 
 .slide-01{
-    background-image: url("../img/endgame_0314-mas_mob_02.jpg");
+    background-image: url("../img/spidey_0318-mas_mob_01.jpg");
     width: 100%;
     height: 29em;
     transform: scaleX(1);
@@ -134,7 +134,7 @@ p{
 }
 
 .slide-03{
-    background-image: url("../img/cloakdagger.jpg");
+    background-image: url("../img/endgame_0314-mas_mob_02.jpg");
     width: 100%;
     height: 29em;
     transform: scaleX(1);
@@ -154,7 +154,7 @@ p{
 }
 
 .slide-05{
-    background-image:url("../img/avngrs_swps.jpg");
+    background-image:url("../img/becoming_0318-mas_mob_01.jpg");
     width: 100%;
     height: 29em;
     transform: scaleX(1);
@@ -180,7 +180,7 @@ p{
 }
 
 .active-slice {
-    background-color: #e02a2a;
+    background-color: #e62429;
     z-index: 999;
 }
   
@@ -255,7 +255,7 @@ p{
 .btn {
     text-transform: uppercase;
     color: #fff;
-    background: #e02a2a;
+    background: #e62429;
     font-weight: 700;
     cursor: pointer;
     text-align: center;
@@ -333,7 +333,7 @@ p{
 }
 
 .card-body h5{
-    color: #e02a2a;
+    color: #e62429;
     font-size: 0.8rem;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -852,7 +852,7 @@ footer{
 
     @media (min-width:838px){
         .slideshow-container {
-            height: 500px;
+            height: 450px;
         }
 
         .slide-01,
@@ -860,7 +860,7 @@ footer{
         .slide-03,
         .slide-04,
         .slide-05{
-        height: 500px;
+        height: 450px;
         transform: none;
         -webkit-transform: none;
         transition: all .2s linear;
@@ -880,12 +880,17 @@ footer{
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+            position: fixed;
+            z-index: 99999;
         }
 
         .menu-desk-background{
             background-color: #22262a;
             height: 2.5rem;
             width: 100%;
+            position: fixed;
+            z-index: 99999;
+            top: 52px;
         }
 
         .desktopNav__upper {
@@ -910,34 +915,26 @@ footer{
             line-height: 16px;
             text-transform: uppercase;
             text-decoration: none;
-            color: #e5e5e5;
+            color: #fff;
             text-align: center;
             position: relative;
-            padding-top: 14px;
+            padding-top: 10px;
+            border-left: 1px solid #393939;
+            border-right: 1px solid #393939;
+            height: 51px;
+        }
+
+        .logo-In svg{
+            position: relative;
+            top: 5px;
+            right: 2px;
         }
 
         .logo-marvel{
             flex-grow: 0;
             flex-basis: 50px;
-        }
-
-        .logo-cartao{
-            flex-grow: 0;
-            flex-basis:200px;
-            align-self: stretch;
-            font-family: DIN Next W01 Regular,Trebuchet MS,Helvetica,Arial,sans-serif;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 0px;
-            line-height: 16px;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: #e5e5e5;
-            text-align: center;
-        }
-
-        .logo-cartao svg{
             position: relative;
+            right: 62px;
         }
 
         .logo-search{
@@ -945,12 +942,9 @@ footer{
             flex-basis: 50px;
             align-self: stretch;
             text-align: center;
-            padding-top: 14px;
-        }
-
-
-        .logo-cartao:hover{
-            background-color: #151515;
+            padding-top: 18px;
+            border-left: 1px solid #393939;
+            border-right: 1px solid #393939;
             height: 51px;
         }
 
@@ -977,7 +971,72 @@ footer{
             line-height: 16px;
             text-transform: uppercase;
             text-decoration: none;
-            color: #e5e5e5;
+            color: #fff;
+        }
+
+        .lista-desk li{
+            margin: 0 10px;
+            padding-top: 10px;
+            height: 40px;
+        }
+
+        .lista-desk li:hover{
+            border-bottom: #e62429 solid 2px;
+        }
+        
+        .background-slide{
+            background-color: transparent;
+            bottom: 23.3rem;
+            height: 0rem;
+        }
+
+        .subtitle{
+            font: 700 2.5rem/1 DINNextW01-CondensedMed,Trebuchet MS,Helvetica,Arial,sans-serif;
+            letter-spacing: 0.1rem;
+            padding-bottom: .7rem;
+        }
+
+        p{
+            font: 500 1.2rem/1 "DINNextW01-Regular",Trebuchet MS,Helvetica,Arial,sans-serif;
+        }
+
+        .btn:hover{
+            background: #8f171b;
+        }
+
+        .background-ticket{
+            transform: skew(0deg, 0deg);
+            top: 1px;
+            z-index: 1;
+            height: 561px;
+        }
+
+        .background-ticket img{
+            margin-top: 0px;
+        }
+
+        .content-ticket{
+            transform: skew(0deg, 0deg);
+        }
+        .img-ticket{
+            width: 55%;
+            height: 560px;
+            float: right;
+            position: relative;
+            top: 2px;
+            z-index: 2;
+        }
+
+        .img-ticket:before{
+            border-bottom: 560px solid #151515;
+            border-right: 160px solid transparent;
+            content: "";
+            height: 0;
+            position: absolute;
+            -webkit-transition: .5s ease;
+            transition: .5s ease;
+            width: 0;
+            z-index: 1;
         }
 
     }
