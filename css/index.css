@@ -208,7 +208,7 @@ p{
 
 .background-slide{
     background-color: #151515;
-    height: 28rem;
+    height: 27.3rem;
     position: relative;
     bottom: 1.3rem;
 }
@@ -318,7 +318,11 @@ p{
     grid-gap: 20px;
 }
 
-.card-margin{
+.card-body a{
+    text-decoration: none;
+}
+.card-margin,
+.card-margin-characters{
     margin-left: 30px;
 }
 
@@ -705,6 +709,13 @@ p{
 }
 
 .the-latest-separator{
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom:26px;
+    margin-bottom:40px;
+    text-align:left;
+}
+
+.footer-separator{
     border-bottom: 1px solid #282828;
     padding-bottom:26px;
     margin-bottom:40px;
@@ -853,7 +864,7 @@ footer{
 
     @media (min-width:838px){
         .slideshow-container {
-            height: 450px;
+            height: 550px;
             margin-top: 92px;
         }
 
@@ -862,7 +873,7 @@ footer{
         .slide-03,
         .slide-04,
         .slide-05{
-        height: 450px;
+        height: 550px;
         transform: none;
         -webkit-transform: none;
         transition: all .2s linear;
@@ -1015,6 +1026,10 @@ footer{
         .btn-ticket:hover{
             border: #393939 solid 1px;
         }
+
+        .btn-latest:hover{
+            border: #cacaca solid 1px;
+        }
         
 
         .background-ticket,
@@ -1066,16 +1081,16 @@ footer{
             width: 100%;
         }
 
-        .card-body a{
-            text-decoration: none;
-        }
-
         .card-body p{
             font-size: 14px;
             line-height: 22px;
         }
 
         .card-body p:hover{
+            color: #e62429;
+        }
+
+        .the-latest-grid p:hover{
             color: #e62429;
         }
 
@@ -1135,7 +1150,7 @@ footer{
         }
 
         .card-margin-characters{
-            width: 85%;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
@@ -1147,11 +1162,36 @@ footer{
         }
 
         .is-sliding-caracters{
-            width: 150px;
+            width: 180px;
         }
 
         .card-thumb-caracters figure img{
-            width: 150px;
+            width: 180px;
+        }
+
+        .scroll{
+            overflow-x:hidden;
+        }
+
+        .img-wrapper{
+            transition: transform .2s;
+            height: 228px;
+        }
+
+        .img-wrapper:hover{
+            -ms-transform: scale(1.1); 
+            -webkit-transform: scale(1.1); 
+            transform: scale(1.1); 
+        }
+        .margin-the-latest{
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 180px;
+        }
+
+        .the-latest-img01,
+        .the-latest-img02{
+            height: 236px;
         }
 
     }
