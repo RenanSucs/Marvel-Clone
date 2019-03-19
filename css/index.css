@@ -235,8 +235,8 @@ p{
 }
 
 .img-fluid {
-    max-width: 100%;
-    height: auto;
+    max-width: 100% !important;
+    height: auto !important;
   }
 
 .logo-avengers{
@@ -252,7 +252,8 @@ p{
     padding-bottom: .7rem;
 }
 
-.btn {
+.btn,
+.btn-red {
     text-transform: uppercase;
     color: #fff;
     background: #e62429;
@@ -853,6 +854,7 @@ footer{
     @media (min-width:838px){
         .slideshow-container {
             height: 450px;
+            margin-top: 92px;
         }
 
         .slide-01,
@@ -881,6 +883,7 @@ footer{
             -ms-user-select: none;
             user-select: none;
             position: fixed;
+            top: 0;
             z-index: 99999;
         }
 
@@ -1000,11 +1003,21 @@ footer{
             font: 500 1.2rem/1 "DINNextW01-Regular",Trebuchet MS,Helvetica,Arial,sans-serif;
         }
 
-        .btn:hover{
+        .btn-red:hover{
             background: #8f171b;
         }
 
-        .background-ticket{
+        .btn-ticket{
+            display: inline-block;
+            margin-right: 10px !important;
+        }
+
+        .btn-ticket:hover{
+            border: #393939 solid 1px;
+        }
+
+        .background-ticket,
+        .background-celebrate{
             transform: skew(0deg, 0deg);
             top: 1px;
             z-index: 1;
@@ -1015,10 +1028,12 @@ footer{
             margin-top: 0px;
         }
 
-        .content-ticket{
+        .content-ticket,
+        .content-celebrate{
             transform: skew(0deg, 0deg);
         }
-        .img-ticket{
+        .img-ticket,
+        .img-celebrate{
             width: 55%;
             height: 560px;
             float: right;
@@ -1027,7 +1042,8 @@ footer{
             z-index: 2;
         }
 
-        .img-ticket:before{
+        .img-ticket:before,
+        .img-celebrate:before{
             border-bottom: 560px solid #151515;
             border-right: 160px solid transparent;
             content: "";
@@ -1037,6 +1053,57 @@ footer{
             transition: .5s ease;
             width: 0;
             z-index: 1;
+        }
+
+        .celebrate-position{
+            position: relative;
+            top: -75px;
+        }
+
+        .card-body{
+            grid-template-columns: repeat(4, 1fr);
+            width: 100%;
+        }
+
+        .card-body a{
+            text-decoration: none;
+        }
+
+        .card-body p{
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        .card-body p:hover{
+            color: #e62429;
+        }
+
+        .divider-container,
+        .divider{
+            display: none;
+        }
+
+        .card-movies-01,
+        .card-movies-02,
+        .card-movies-03,
+        .card-movies-04,
+        .card-comics-01,
+        .card-comics-02,
+        .card-comics-03,
+        .card-comics-04{
+            height: 150px !important;
+        }
+
+        .card-margin{
+            margin: 0 auto;
+            max-width: 1200px;
+            background-color: #fff;
+            padding-top: 8px;
+            padding-left: 25px;
+            padding-right: 25px;
+            position: relative;
+            top: -90px;
+            z-index: 99
         }
 
     }
