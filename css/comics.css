@@ -1,0 +1,201 @@
+h5{
+    font-family: "DINNextW01-CondensedMed";
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+
+h6{
+    color: #999;
+    font: normal 14px/15px "DINNextW01-CondensedMed";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+strong{
+    font-family: "DIN Next W01 Regular";
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+.background-nav-desk,
+.menu-desk-background{
+    position: relative;
+    top: 0;
+}
+
+.detail-top-bar-wrap{
+    background: #444;
+    height: auto;
+}
+
+.detail-top-bar{
+    background-color: #151515;
+    color: #fff;
+    text-transform: uppercase;
+    height: 45px;
+    border-width: 0;
+}
+
+.detail-top-bar-lft{
+    line-height: 42px;
+    color: #fff;
+    text-transform: uppercase;
+    vertical-align: top;
+    position: relative;
+    z-index: 2;
+    float: left;
+    padding: 0 8px 0 5px;
+    margin-top: 3px;
+}
+
+.icon-backto{
+    display: inline-block;
+    height: 25px;
+    vertical-align: middle;
+    line-height: 25px;
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    margin-top: -2px;
+}
+
+.icon-backto::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 24px;
+    background-image: url(https://i.annihil.us/u/prod/marvel/images/sprites/Arrow_Left_2x.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.detail-top-bar-rgt{
+    line-height: 42px;
+    color: #fff;
+    text-shadow: 2px 2px 0 #000;
+    text-transform: uppercase;
+    vertical-align: top;
+    float: right;
+    padding-top: 6px;
+}
+
+.detail-top-bar-lft span{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.iconSocial{
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.icon-svg-color{
+    fill: #fff;
+}
+
+.fb-container{
+    display: inline-block;
+}
+
+.background-comic{
+    background: #000;
+    color: #fff;
+}
+
+.grid-flex-comic{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-text{
+    flex: 6;
+}
+
+.item-text{
+    font-family: "DINNextW01-CondensedMed";
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.item-text ul{
+    margin-top: 25px;
+}
+
+.item-text li{
+    margin-top: 25px;
+}
+
+.item-text a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.item-text strong{
+    font-weight: bold;
+}
+
+.item-comic{
+    flex: 4;
+    padding: 0 30px 30px 0;
+}
+
+.deadpool-img-border{
+    border: 1px solid #353535;
+}
+
+.background-comic h3{
+    font-size: 30px;
+    display: inline-block;
+    margin: 30px 0 30px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.background-details{
+    font-family: "DIN Next W01 Regular";
+    background-color: #202020;
+    padding: 20px 0;
+}
+
+.background-details h5{
+    margin: 30px 0;
+}
+
+.subtitle-style{
+    display: inline-block;
+}
+
+.see-all-deadpool{
+    float: right;
+    text-transform: uppercase !important;
+    text-decoration: none;
+    font-size: 12px !important;
+    font-family: "DIN Next W01 Regular";
+    font-weight: bold;
+    color: #151515;
+    margin-top: 37px;
+}
+
+.card-body-dead{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    margin-top: 6px;
+}
