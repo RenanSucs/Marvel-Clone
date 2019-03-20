@@ -281,6 +281,12 @@ a{
     margin-top: 12px;
 }
 
+@media(max-width:838px){
+    .item-bg-image{
+        display: none;
+    }
+}
+
 @media (min-width: 600px){
     .background-comic h3 {
       display: none;
@@ -298,5 +304,40 @@ a{
     .container-details{
         max-width: 50% !important;
         margin: 0 auto !important;
+    }
+}
+
+@media(min-width:838px){
+    .item-bg-image{
+        max-width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        min-height: 100%;
+        overflow: hidden;
+    }
+
+    .item-bg-image img{
+        width: 100% !important;
+        margin-right: -5%;
+        margin-top: 152px;
+        filter: blur(1rem);
+        height: auto !important;
+        background-color: transparent !important;
+        -webkit-mask-box-image: none !important;
+        opacity: .18;
+        height: 1700px;
+    }
+
+    .background-details{
+        position: relative;
+    }
+
+    .background-more-deadpool{
+        background: #fff;
+        position: relative;
     }
 }
