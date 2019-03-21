@@ -1231,6 +1231,10 @@ footer{
             color: #fff;
         }
 
+        .lista-flex a:hover{
+            color:#999;
+        }
+
     }
     @media (max-width:1000px){
         .background-ticket img {

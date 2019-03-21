@@ -16,6 +16,7 @@ h6{
     font-weight: bold;
     margin-top: 25px;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 strong{
@@ -33,6 +34,11 @@ a{
     line-height: 1.5;
     font-size: 13px;
     font-weight: bold;
+}
+
+.background-details li a:hover{
+    color: #e62429;
+    border-bottom: solid 1px #e62429;
 }
 
 .background-details li a{
@@ -68,7 +74,7 @@ a{
     z-index: 2;
     float: left;
     padding: 0 8px 0 5px;
-    margin-top: 3px;
+    margin-top: 1px;
 }
 
 .icon-backto{
@@ -189,10 +195,15 @@ a{
 
 .background-details h5{
     margin: 30px 0;
+    text-align: center;
 }
 
 .subtitle-style{
     display: inline-block;
+}
+
+.subtitle-style::before{
+    left: 34px !important;
 }
 
 .see-all-deadpool{
@@ -288,10 +299,6 @@ a{
 }
 
 @media (min-width: 600px){
-    .background-comic h3 {
-      display: none;
-    }
-
     .grid-flex-comic{
         padding-top: 40px;
     }
@@ -301,10 +308,6 @@ a{
         justify-content: space-around;
     }
 
-    .container-details{
-        max-width: 50% !important;
-        margin: 0 auto !important;
-    }
 }
 
 @media(min-width:838px){
@@ -340,4 +343,38 @@ a{
         background: #fff;
         position: relative;
     }
+
+    .card-body-characters {
+        width: 100%;
+        grid-gap: 30px;
+    }
+
+    .card-body-characters figure,
+    .card-body-characters-series figure{
+        position: relative;
+        top: 0px;
+        
+    }
+
+    .card-body-characters figure:hover,
+    .card-body-characters-series figure:hover{
+        top:-5px;
+        transition: all 0.2s ease-in-out
+    }
+
+    .see-all-deadpool:hover,
+    .card-headline strong:hover,
+    .card-headline p:hover{
+        color: #e62429;
+    }
+
+    .card-body-characters-series {
+        width: 47%;
+        grid-gap: 56px;
+    }
+
+    .detail-top-bar-lft:hover{
+        background: #202020;
+    }
+
 }
