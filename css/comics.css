@@ -328,7 +328,7 @@ a{
         margin-right: -5%;
         margin-top: 152px;
         filter: blur(1rem);
-        height: auto !important;
+        height: 1700px;
         background-color: transparent !important;
         -webkit-mask-box-image: none !important;
         opacity: .18;
