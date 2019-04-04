@@ -2,8 +2,8 @@
 function slidetoggle(){
   var slider = document.getElementById('nav-slide');
   var close = document.getElementById('nav-close');
-  slider.style.height = window.innerHeight - 60 + "px";
-  close.style.height = window.innerHeight - 60 + "px";
+  slider.style.height = window.innerHeight;
+  close.style.height = window.innerHeight;
 
   if(slider.style.left == "0px"){
     slider.style.left = "-2000px";
@@ -13,7 +13,7 @@ function slidetoggle(){
   }
 
   if(close.style.left == "0px"){
-    close.style.left = "-400px";
+    close.style.left = "-4000px";
   }
   else{
     close.style.left = "0px";
@@ -37,7 +37,10 @@ function slidetoggle(){
       }
     
       slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
+      if (slideIndex > slides.length){
+        slideIndex = 1
+      }
+
       for (i = 0; i < slice.length; i++) {
         slice[i].className = slice[i].className.replace(" active-slice", "");
       }
